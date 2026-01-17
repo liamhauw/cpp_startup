@@ -1,0 +1,23 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/engine/Debug/cpp_startup_engine",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "preLaunchTask": "CMake Debug"
+    },
+    {
+      "name": "RelWithDebug",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${workspaceFolder}/bin/cpp_startup_engine",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "preLaunchTask": "CMake RelWithDebInfo"
+    },
+  ]
+}
